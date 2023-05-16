@@ -4,7 +4,7 @@ Amazing Air Vision app, contains Air Quality, Temperature, Wind speed, Humidity 
 
 > This our IOT app for final project G.คิดไม่ออกครับ of 2110366 EMBEDDED SYS LAB I.
 > 
-> For backend repository [this repository](https://github.com/Armph/Final-Project-Backend).
+> For backend repository [please click here !](https://github.com/Armph/Final-Project-Backend)
 
 ## What we have ?
 - [static](#static)
@@ -12,3 +12,6 @@ Amazing Air Vision app, contains Air Quality, Temperature, Wind speed, Humidity 
   - [images](#images)
   - [js](#js)
 - [index.html](#index.html)
+
+#
+- Note: this is for MOBILE ONLY, the PC version maybe coming soon !
