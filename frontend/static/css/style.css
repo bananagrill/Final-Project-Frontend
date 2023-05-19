@@ -171,7 +171,7 @@ h {
   border-radius: 0px 10px 10px 10px;
 }
 
-.temp-image {
+#temp-image {
   position: absolute;
   width: 21.25px;
   height: 36px;

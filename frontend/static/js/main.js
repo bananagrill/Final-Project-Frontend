@@ -9,34 +9,34 @@ const fetchDeviceStatusShadow = async () => {
 
     const statusImage = document.getElementById('status-image');
     const dustDescription = document.getElementById('dust-description');
-    const tempImge = doucment.getElementByClassName("temp-image");
+    const tempImage = document.getElementById("temp-image");
     if (dust >= 301) {
-      statusImage.src = 'static/images/status/icon-maroon.png';
+      statusImage.src = 'static/images/status/dust/icon-maroon.png';
       dustDescription.innerHTML = 'Hazardous';
     } else if (dust >= 201) {
-      statusImage.src = 'static/images/status/icon-purple.png';
+      statusImage.src = 'static/images/status/dust/icon-purple.png';
       dustDescription.innerHTML = 'Very Unhealthy';
     } else if (dust >= 151) {
-      statusImage.src = 'static/images/status/icon-red.png';
+      statusImage.src = 'static/images/status/dust/icon-red.png';
       dustDescription.innerHTML = 'Unhealthy';
     } else if (dust >= 101) {
-      statusImage.src = 'static/images/status/icon-orange.png';
+      statusImage.src = 'static/images/status/dust/icon-orange.png';
       dustDescription.innerHTML = 'Unhealthy for Sensitive Groups';
     } else if (dust >= 51) {
-      statusImage.src = 'static/images/status/icon-yellow.png';
+      statusImage.src = 'static/images/status/dust/icon-yellow.png';
       dustDescription.innerHTML = 'Moderate';
     } else {
-      statusImage.src = 'static/images/status/icon-green.png';
+      statusImage.src = 'static/images/status/dust/icon-green.png';
       dustDescription.innerHTML = 'Good';
     }
     if (temp >= 40) {
-      tempImge.src = 'static/images/status/hot.png'
+      tempImage.src = 'static/images/status/temp/icon-hot.png'
     }
     else if (temp >= 25) {
-      tempImge.src = 'static/images/status/warm.png'
+      tempImage.src = 'static/images/status/temp/icon-warm.png'
     }
     else {
-      tempImge.src = 'static/images/status/cool.png'
+      tempImage.src = 'static/images/status/temp/icon-cool.png'
     }
   };
 
