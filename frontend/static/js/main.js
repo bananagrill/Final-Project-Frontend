@@ -5,28 +5,38 @@ const fetchDeviceStatusShadow = async () => {
     document.getElementById('dust-value').innerHTML = dust + ' AQI';
     document.getElementById('temp-value').innerHTML = temp + ' °C';
     document.getElementById('humidity-value').innerHTML = humidity + '%';
-    document.getElementById('wind-value').innerHTML =  wind + ' km/h';
+    document.getElementById('wind-value').innerHTML = wind + ' km/h';
 
     const statusImage = document.getElementById('status-image');
     const dustDescription = document.getElementById('dust-description');
+    const tempImge = doucment.getElementByClassName("temp-image");
     if (dust >= 301) {
-        statusImage.src = 'static/images/status/icon-maroon.png';
-        dustDescription.innerHTML = 'Hazardous';
+      statusImage.src = 'static/images/status/icon-maroon.png';
+      dustDescription.innerHTML = 'Hazardous';
     } else if (dust >= 201) {
-        statusImage.src = 'static/images/status/icon-purple.png';
-        dustDescription.innerHTML = 'Very Unhealthy';
+      statusImage.src = 'static/images/status/icon-purple.png';
+      dustDescription.innerHTML = 'Very Unhealthy';
     } else if (dust >= 151) {
-        statusImage.src = 'static/images/status/icon-red.png';
-        dustDescription.innerHTML = 'Unhealthy';
-    } else  if (dust >= 101) {
-        statusImage.src = 'static/images/status/icon-orange.png';
-        dustDescription.innerHTML = 'Unhealthy for Sensitive Groups';
+      statusImage.src = 'static/images/status/icon-red.png';
+      dustDescription.innerHTML = 'Unhealthy';
+    } else if (dust >= 101) {
+      statusImage.src = 'static/images/status/icon-orange.png';
+      dustDescription.innerHTML = 'Unhealthy for Sensitive Groups';
     } else if (dust >= 51) {
-        statusImage.src = 'static/images/status/icon-yellow.png';
-        dustDescription.innerHTML = 'Moderate';
+      statusImage.src = 'static/images/status/icon-yellow.png';
+      dustDescription.innerHTML = 'Moderate';
     } else {
-        statusImage.src = 'static/images/status/icon-green.png';
-        dustDescription.innerHTML = 'Good';
+      statusImage.src = 'static/images/status/icon-green.png';
+      dustDescription.innerHTML = 'Good';
+    }
+    if (temp >= 40) {
+      tempImge.src = 'static/images/status/hot.png'
+    }
+    else if (temp >= 25) {
+      tempImge.src = 'static/images/status/warm.png'
+    }
+    else {
+      tempImge.src = 'static/images/status/cool.png'
     }
   };
 
