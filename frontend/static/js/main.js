@@ -7,18 +7,27 @@ const fetchDeviceStatusShadow = async () => {
     document.getElementById('humidity-value').innerHTML = humidity + '%';
     document.getElementById('wind-value').innerHTML =  wind + ' km/h';
 
-    /* Will do letter
-    const statusImageElement = document.getElementById('status-image');
-    if (data.data.value <= 50) {
-        statusImageElement.src = 'static/images/status/icon-normal.png';
-    } else if (data.data.value <= 100) {
-        statusImageElement.src = 'static/images/status/icon-moderate.png';
-    } else if (data.data.value <= 150) {
-        statusImageElement.src = 'static/images/status/icon-unhealthy.png';
+    const statusImage = document.getElementById('status-image');
+    const dustDescription = document.getElementById('dust-description');
+    if (dust >= 301) {
+        statusImage.src = 'static/images/status/icon-maroon.png';
+        dustDescription.innerHTML = 'Hazardous';
+    } else if (dust >= 201) {
+        statusImage.src = 'static/images/status/icon-purple.png';
+        dustDescription.innerHTML = 'Very Unhealthy';
+    } else if (dust >= 151) {
+        statusImage.src = 'static/images/status/icon-red.png';
+        dustDescription.innerHTML = 'Unhealthy';
+    } else  if (dust >= 101) {
+        statusImage.src = 'static/images/status/icon-orange.png';
+        dustDescription.innerHTML = 'Unhealthy for Sensitive Groups';
+    } else if (dust >= 51) {
+        statusImage.src = 'static/images/status/icon-yellow.png';
+        dustDescription.innerHTML = 'Moderate';
     } else {
-        statusImageElement.src = 'static/images/status/icon-hazardous.png';
+        statusImage.src = 'static/images/status/icon-green.png';
+        dustDescription.innerHTML = 'Good';
     }
-    */
   };
 
   try {
