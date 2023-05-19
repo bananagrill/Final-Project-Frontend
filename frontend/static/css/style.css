@@ -22,7 +22,6 @@ body {
 }
 
 h {
-  /* Air Vision */
   position: absolute;
   width: 334.45px;
   height: 53px;
@@ -34,7 +33,6 @@ h {
   font-weight: 700;
   font-size: 48px;
   line-height: 52px;
-  /* identical to box height, or 109% */
 
   text-align: center;
   letter-spacing: 1.27185px;
@@ -104,7 +102,6 @@ h {
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
-  /* or 200% */
 
   text-align: center;
   letter-spacing: 1.27185px;
@@ -114,9 +111,9 @@ h {
 
 #dust-description {
   position: absolute;
-  width: 235px;
+  width: 260px;
   height: 40px;
-  left: 105px;
+  left: 89px;
   top: 55px;
 
   font-family: MPLUS1;
@@ -124,7 +121,6 @@ h {
   font-weight: 700;
   font-size: 14px;
   line-height: 40px;
-  /* identical to box height, or 286% */
 
   text-align: center;
   letter-spacing: 1.27185px;
@@ -181,7 +177,7 @@ h {
 
 #temp-value {
   position: absolute;
-  width: 56px;
+  width: 75px;
   height: 0px;
   left: 203px;
   top: 40px;
@@ -191,7 +187,6 @@ h {
   font-weight: 700;
   font-size: 22px;
   line-height: 0px;
-  /* identical to box height, or 0% */
 
   text-align: center;
 
@@ -239,7 +234,6 @@ h {
   font-weight: 700;
   font-size: 20px;
   line-height: 46px;
-  /* identical to box height, or 229% */
 
   text-align: center;
 
@@ -258,7 +252,6 @@ h {
   font-weight: 700;
   font-size: 16px;
   line-height: 46px;
-  /* identical to box height, or 286% */
 
   text-align: center;
 
@@ -289,7 +282,6 @@ h {
   font-weight: 700;
   font-size: 20px;
   line-height: 46px;
-  /* identical to box height, or 229% */
 
   text-align: center;
 
@@ -308,7 +300,6 @@ h {
   font-weight: 700;
   font-size: 16px;
   line-height: 46px;
-  /* identical to box height, or 286% */
 
   text-align: center;
 
