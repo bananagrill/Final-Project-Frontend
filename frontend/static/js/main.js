@@ -43,9 +43,9 @@ const fetchDeviceStatusShadow = async () => {
   try {
     const options = {
       method: 'GET',
-      headers: {
-        'Authorization': 'Device 4513aa93-b88c-4e9b-92d3-11ba2920a2ee:Z7XT8mdToAGAYFU8898Xym7sgyBiC64K',
-      },
+      //headers: {
+        //'Authorization': 'Device 4513aa93-b88c-4e9b-92d3-11ba2920a2ee:Z7XT8mdToAGAYFU8898Xym7sgyBiC64K',
+      //},
       credentials: 'include',
     };
     const response = await fetch(`http://${backendIPAddress}/api/device/shadow/data`, options);
