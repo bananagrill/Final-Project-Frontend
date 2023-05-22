@@ -224,9 +224,9 @@ h {
 
 #wind-value {
   position: absolute;
-  width: 90px;
+  width: 100px;
   height: 46px;
-  left: 40px;
+  left: 35px;
   top: 10px;
 
   font-family: Epilogue;
