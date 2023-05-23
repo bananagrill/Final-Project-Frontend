@@ -1,11 +1,11 @@
 const backendIPAddress = '127.0.0.1:3000';
 
 const fetchDeviceStatusShadow = async () => {
-  const updateUIWithData = (dust, temp, humidity, wind) => {
+  const updateUIWithData = (dust, temp, humidity, lux) => {
     document.getElementById('dust-value').innerHTML = dust + ' AQI';
     document.getElementById('temp-value').innerHTML = temp + ' °C';
     document.getElementById('humidity-value').innerHTML = humidity + '%';
-    document.getElementById('wind-value').innerHTML = wind + ' km/h';
+    document.getElementById('lux-value').innerHTML = lux + ' lux';
 
     const statusImage = document.getElementById('status-image');
     const dustDescription = document.getElementById('dust-description');
@@ -52,7 +52,7 @@ const fetchDeviceStatusShadow = async () => {
     const data = await response.json();
     console.log(data);
     const dataTable = data.data;
-    updateUIWithData(dataTable.dust, dataTable.temp, dataTable.humidity, dataTable.wind);
+    updateUIWithData(dataTable.dust, dataTable.temp, dataTable.humidity, dataTable.lux);
   } catch (error) {
     console.error('Error:', error);
   }

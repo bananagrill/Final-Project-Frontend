@@ -210,7 +210,7 @@ h {
   margin-right: 10px;
 }
 
-.wind-section {
+.lux-section {
   position: absolute;
   width: 170px;
   height: 90px;
@@ -222,7 +222,7 @@ h {
   border-radius: 10px;
 }
 
-#wind-value {
+#lux-value {
   position: absolute;
   width: 100px;
   height: 46px;
@@ -240,11 +240,11 @@ h {
   color: #121212;
 }
 
-.wind-text {
+.lux-text {
   position: absolute;
-  width: 96px;
+  width: 118px;
   height: 46px;
-  left: 37px;
+  left: 27px;
   top: 56px;
 
   font-family: Epilogue;
