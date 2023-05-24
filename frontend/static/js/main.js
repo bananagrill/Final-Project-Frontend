@@ -2,6 +2,7 @@ const backendIPAddress = '127.0.0.1:3000';
 
 const fetchDeviceStatusShadow = async () => {
   const updateUIWithData = (dust, temp, humidity, lux) => {
+    dust = Math.round(dust);
     document.getElementById('dust-value').innerHTML = dust + ' AQI';
     document.getElementById('temp-value').innerHTML = temp + ' °C';
     document.getElementById('humidity-value').innerHTML = humidity + '%';
@@ -60,4 +61,4 @@ const fetchDeviceStatusShadow = async () => {
 
 fetchDeviceStatusShadow();
 
-setInterval(fetchDeviceStatusShadow, 2000);
+setInterval(fetchDeviceStatusShadow, 500);
